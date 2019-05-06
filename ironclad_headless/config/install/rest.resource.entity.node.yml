@@ -1,0 +1,25 @@
+uuid: 9e93680c-03fc-4ad2-abc3-6bfa06b240df
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ironclad_headless
+  module:
+    - node
+    - serialization
+    - user
+id: entity.node
+plugin_id: 'entity:node'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - DELETE
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - cookie
+#
